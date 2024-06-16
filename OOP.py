@@ -148,3 +148,95 @@
 # print(f"Название {station.name1} дата открытия {station.data2} страна {station.country3} город {station.idk4} кол-во мест {station.kon5}")
 
 # class car():
+#     def __init__(self,args):
+#         self.Audi=args[0]
+#         self.year=args[1]
+#         self.money=args[2]
+#         self.prob=args[3]
+# namelist=input("dad")
+# lists=list(namelist.split())
+# cars =car(lists)
+# print(f"Машина {cars.Audi} год {cars.year} Стоимость {cars.money}")
+
+# def sum1(a,b,name="Igor"):
+#     ad=a+b
+#     return name,ad
+# print(sum1(1,2))
+
+# class score():
+#     def __init__(self,speed,color="yelow",owner=None):
+#         self.scorespeed=speed
+#         self.scorecolor=color
+#         self.myowner=owner
+#     def say_owner(self):
+#         if self.myowner:
+#             print(f"Владелец найден")
+#         else:
+#             print("no owner")
+# car=score(200)
+# car1=score(200,"red","dmitry")
+# print(car.scorespeed , car.scorecolor , car.say_owner())
+# print(car1.scorespeed , car1.scorecolor, car1.say_owner())
+
+
+
+
+
+# class score():
+#     def __init__(self,speed,color="yelow",owner=None)->None:
+#         self.scorespeed=speed
+#         self.scorecolor=color
+#         self.myowner=owner
+#     def say_owner(self):
+#         if self.myowner:
+#             print(f"Владелец найден")
+#         else:
+#             print("no owner")
+# car=score(200,"blue")
+# car1=score(speed=200,owner="dmitry")
+# print(car.scorespeed , car.scorecolor , car.say_owner())
+# print(car1.scorespeed , car1.scorecolor, car1.say_owner())
+
+
+
+# class person():
+#     age = 15
+# person1=person
+# print(person1.age)
+# person1.age=14
+# print(person1.age)
+
+# class person():
+#     _age = 15
+#     def score(self):
+#         print("hello")
+# person1= person()
+# print(person1._age)
+# print(person1.score)
+
+# class Myclass:
+#     def __init__(self,name):
+#         self._name=name
+#
+#     @property
+#     def name(self):
+#         return self._name
+#
+#     @name.setter
+#     def name(self,value):
+#         self._name=value
+# a=Myclass('Ivan')
+# print(a.name)
+# a.name = "sergey"
+# print(a.name)
+
+class myteamate():
+    color = "purpule"
+    def __init__(self,name,kn=4):
+        self.hisname=name
+        self.hiskn=kn
+    def all(self):
+        print(self.hisname , self.hiskn , self.color)
+person=myteamate("medved")
+print(person.hisname , person.hiskn , person.color)
+person.all()
