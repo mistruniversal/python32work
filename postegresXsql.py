@@ -10,6 +10,7 @@ import psycopg2
 .fetchall-выводит все записи 
 .fetchmany(3) - таже функция LIMIT в sql
 .executemany - ограниченный список добавлений
+.fetchone() - выводит одну строчку
 """
 
 conn = psycopg2.connect(dbname='postgresL', user='postgres',password='user',host='127.0.0.1',port='5432')
@@ -151,5 +152,19 @@ conn.commit()
 conn.close()
 cursor.close()
 
+
+
+
+
+conn = psycopg2.connect(dbname='testdb1', user='postgres',password='user',host='127.0.0.1',port='5432')
+cursor=conn.cursor()
+
+cursor.execute("SELECT * FROM people")
+print(cursor.fetchone())
+
+conn.commit()
+
+conn.close()
+cursor.close()
 
 
